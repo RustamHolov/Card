@@ -1,18 +1,19 @@
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   /* border: solid 1px rgb(118, 118, 118); */
 }
 body {
-  min-width: 175svh;
-  min-height: 100vh;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
   margin: 0;
+  padding: 20px;
 }
 figure {
   max-width: 25px;
@@ -89,8 +90,6 @@ section {
     "card3 card3 card4 card4 card4 card5 card5";
   grid-template-columns: 1fr 1fr 3fr 1fr 0.75fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  height: 520px;
-  width: 1150px;
   grid-gap: 30px;
 }
 .article-content {
@@ -101,12 +100,12 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 2vw;
+  padding: 20px;
   background-color: hsl(0, 8%, 80%);
   color: rgb(12, 19, 24);
   border-radius: 1.5vh;
   overflow: hidden;
-  box-shadow: 0 20px 30px 0 rgba(9, 9, 9, 0.188);
+  box-shadow: 0 20px 30px 0 rgba(9, 9, 9, 0.368);
   gap: 15px;
   height: 100%;
 }
@@ -134,17 +133,11 @@ section {
 }
 @media (max-width: 500px) {
   main {
-    display: block;
-  }
-  body {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+    max-width: 375px;
+    margin-top: 20px;
   }
   .cards {
     display: flex;
-    max-width: 100svh;
     flex-direction: column;
     height: auto;
     width: auto;
